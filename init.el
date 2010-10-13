@@ -73,4 +73,12 @@
 (if (file-exists-p user-specific-dir)
   (mapc #'load (directory-files user-specific-dir nil ".*el$")))
 
+(set-frame-font "-unknown-Liberation Mono-normal-normal-normal-*-12-*-*-*-m-0-iso10646-1")
+(set-background-color "Black")
+(set-foreground-color "Gray")
+(set-cursor-color "LightSkyBlue")
+(set-mouse-color "LightSkyBlue")
+(global-font-lock-mode t)
+(setq font-lock-maximum-decoration t)
+
 ;;; init.el ends here
