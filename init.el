@@ -73,9 +73,9 @@
 (if (file-exists-p user-specific-dir)
   (mapc #'load (directory-files user-specific-dir nil ".*el$")))
 
-(set-frame-font "-unknown-Liberation Mono-normal-normal-normal-*-12-*-*-*-m-0-iso10646-1")
-(set-background-color "Black")
-(set-foreground-color "Gray")
+(set-frame-font "-unknown-DejaVu Sans Mono-normal-normal-normal-*-12-*-*-*-m-0-iso10646-1")
+(set-background-color "#002b36")
+(set-foreground-color "#93a1a1s")
 (set-cursor-color "LightSkyBlue")
 (set-mouse-color "LightSkyBlue")
 (global-font-lock-mode t)
