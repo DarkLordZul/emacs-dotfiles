@@ -82,7 +82,7 @@
 
 (color-theme-hober)
 
-(set-frame-font "-unknown-DejaVu Sans Mono-normal-normal-normal-*-12-*-*-*-m-0-iso10646-1")
+(set-frame-font "-unknown-Droid Sans Mono Dotted-normal-normal-normal-*-12-*-*-*-m-0-iso10646-1")
 
 (defun toggle-fullscreen (&optional f)
   (interactive)
