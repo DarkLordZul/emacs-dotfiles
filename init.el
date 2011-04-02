@@ -76,13 +76,13 @@
 (if (file-exists-p user-specific-dir)
   (mapc #'load (directory-files user-specific-dir nil ".*el$")))
 
+(add-to-list 'load-path "/usr/share/emacs23/site-lisp/emacs-goodies-el/")
+(require 'color-theme)
+
+
+(color-theme-hober)
+
 (set-frame-font "-unknown-DejaVu Sans Mono-normal-normal-normal-*-12-*-*-*-m-0-iso10646-1")
-(set-background-color "#002b36")
-(set-foreground-color "#93a1a1s")
-(set-cursor-color "LightSkyBlue")
-(set-mouse-color "LightSkyBlue")
-(global-font-lock-mode t)
-(setq font-lock-maximum-decoration t)
 
 (defun toggle-fullscreen (&optional f)
   (interactive)
