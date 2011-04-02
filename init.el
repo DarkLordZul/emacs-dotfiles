@@ -17,6 +17,8 @@
 
 ;; Load path etc.
 
+(add-to-list 'load-path "/usr/share/emacs23/site-lisp/emacs-goodies-el/")
+
 (setq dotfiles-dir (file-name-directory
                     (or (buffer-file-name) load-file-name)))
 
@@ -76,7 +78,10 @@
 (if (file-exists-p user-specific-dir)
   (mapc #'load (directory-files user-specific-dir nil ".*el$")))
 
-(add-to-list 'load-path "/usr/share/emacs23/site-lisp/emacs-goodies-el/")
 (require 'color-theme)
+
+(wombat)
+
+(set-frame-font "-unknown-Droid Sans Mono Dotted-normal-normal-normal-*-12-*-*-*-m-0-iso10646-1")
 
 ;;; init.el ends here
