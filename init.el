@@ -79,9 +79,4 @@
 (add-to-list 'load-path "/usr/share/emacs23/site-lisp/emacs-goodies-el/")
 (require 'color-theme)
 
-
-(zenburn)
-
-(set-frame-font "-unknown-Droid Sans Mono Dotted-normal-normal-normal-*-12-*-*-*-m-0-iso10646-1")
-
 ;;; init.el ends here
